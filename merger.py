@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-""" Python commandline script for merging multiple CSV files in a given directory
+""" Python command line script for merging multiple CSV files in a given directory
 """
 
 
@@ -15,9 +15,6 @@ import glob, csv, time, sys, argparse
 # python merger.py -o new.csv ./files
 
 def main(argv):
-    dir='.'
-    inputfile=None
-
     parser = argparse.ArgumentParser(description='Merge multiple csv files.')
     parser.add_argument('dir', help='directory containing csv files', default=".")
     parser.add_argument('-o', '--output', help='output file name', default="merged.csv")
